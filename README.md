@@ -9,6 +9,18 @@ validated before saving.
 The database keeps track of the loads so that we can identify and 
 delete a previous import.
 
+## Running the reader
+First install the dependencies (the only non-native Python module used is
+psycopg2) and then run the main.py script.
+
+```commandline
+pip install -r requirements.txt
+python main.py 
+```
+
+You will then be prompted to a menu where you can load data from a csv file or
+delete a previous import.
+
 ## Organising the data
 The reader expects to read a file with the following 4 attributes:
 - "PointOfSale": string identifier of the point of sale
